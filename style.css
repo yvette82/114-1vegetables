@@ -1,0 +1,277 @@
+/* ===== 色彩系統 ===== */
+:root {
+  --primary: #778A50;
+  --background: #EDF2C5;
+  --content-text: #7D7D7D;
+  --content-bg: #F7FBDA;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+/* ===== 全域字型 ===== */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--content-text);
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== 字型系統 ===== */
+/* Headings */
+.head1 {
+  font-size: 44px;
+  line-height: normal;
+  font-weight: 900;
+  color: var(--black);
+}
+
+.head2 {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* Text styles */
+.text1 {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--content-text);
+}
+
+.text2 {
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--content-text);
+}
+
+/* ===== 整個頁面容器 ===== */
+.page-container {
+  width: 1440px;
+  min-height: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ===== Header ===== */
+.header {
+  width: 1122px;
+  height: 62px;
+  margin: 36px auto 0 auto;
+  position: relative;
+}
+
+
+/* Logo 與按鈕群放在同一行 */
+.header-top {
+  width: 1122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ===== Logo 樣式 ===== */
+.logo {
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 0;
+}
+
+/* 按鈕群 */
+.btn-group .btn {
+  padding: 5px 10px;
+  border: 1px solid var(--primary);
+  background-color: var(--content-bg);
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ===== Nav ===== */
+.nav {
+  width: 1120px;
+  height: 44px;
+  background-color: var(--primary);
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  padding-left: 16px;
+}
+
+/* ===== Header Actions (右上角整組) ===== */
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* 社群圖示 */
+.social-group {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* 分隔線 */
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--primary);
+  margin: 0 12px;
+}
+
+/* 按鈕群 */
+.btn-group .btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid var(--primary);
+  background-color: var(--content-bg);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* ===== Hero Image ===== */
+.hero {
+  width: 1120px;
+  height: 448px;
+  margin: 20px auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Main Content ===== */
+.content {
+  width: 1120px;
+  height: 448px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 20px auto;
+}
+
+/* 左右 box */
+.left, .right {
+  width: 528px;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: transparent; 
+}
+
+.right {
+  position: relative;
+  padding-right: 14px;
+}
+
+.left h2, .right h2 {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary);
+  border-radius: 3px 3px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding-left: 16px;
+  margin: 0;
+}
+
+/* 圖片群組 */
+.left .gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 543px;
+  height: 140px;
+  margin-top: 16px;
+}
+
+.left .gallery img.corn {
+  width: 165px;
+  height: 140px;
+  left: 16px;
+}
+
+.left .gallery img.middle {
+  width: 166px;
+  height: 140px;
+  left: 197px;
+}
+
+.left .gallery img.squash {
+  width: 165px;
+  height: 140px;
+  left: 378px;
+}
+
+
+.left .gallery img:last-child {
+  margin-right: 0; 
+}
+
+
+/* Contact 區塊整體背景 */
+.contact-box {
+  width: 500px;
+  background-color: var(--content-bg);
+  padding: 16px;
+  border-radius: 3px;
+  margin-top: 16px;
+}
+
+/* 裡面文字 */
+.contact-box p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  color: var(--content-text);
+}
+
+/* 分隔線 */
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary);
+  margin: 12px 0;
+}
+
+
+/* ===== Footer ===== */
+.footer {
+  width: 1440px;
+  height: 60px;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+}
