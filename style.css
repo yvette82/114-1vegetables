@@ -158,13 +158,14 @@ body {
 .hero {
   width: 1120px;
   height: 448px;
-  margin: 20px auto;
+  margin: 40px auto 20px auto;
 }
 
 .hero img {
   width: 100%;
   height: auto;
   display: block;
+  margin-top: 30px;
 }
 
 /* ===== Main Content ===== */
@@ -173,7 +174,7 @@ body {
   height: 448px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 20px auto;
+  margin: 40px auto 20px auto;
 }
 
 /* 左右 box */
