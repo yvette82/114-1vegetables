@@ -1,4 +1,3 @@
-/* ===== 色彩系統 ===== */
 :root {
   --primary: #778A50;
   --background: #EDF2C5;
@@ -8,7 +7,6 @@
   --white: #FFFFFF;
 }
 
-/* ===== 全域字型 ===== */
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: var(--background);
@@ -20,8 +18,6 @@ body {
   justify-content: center;
 }
 
-/* ===== 字型系統 ===== */
-/* Headings */
 .head1 {
   font-size: 44px;
   line-height: normal;
@@ -51,7 +47,6 @@ body {
   color: var(--content-text);
 }
 
-/* ===== 整個頁面容器 ===== */
 .page-container {
   width: 1440px;
   min-height: 1024px;
@@ -70,7 +65,6 @@ body {
 }
 
 
-/* Logo 與按鈕群放在同一行 */
 .header-top {
   width: 1122px;
   display: flex;
@@ -79,7 +73,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== Logo 樣式 ===== */
 .logo {
   font-size: 44px;
   font-weight: 900;
@@ -87,7 +80,6 @@ body {
   margin: 0;
 }
 
-/* 按鈕群 */
 .btn-group .btn {
   padding: 5px 10px;
   border: 1px solid var(--primary);
@@ -98,7 +90,6 @@ body {
   cursor: pointer;
 }
 
-/* ===== Nav ===== */
 .nav {
   width: 1120px;
   height: 44px;
@@ -119,13 +110,11 @@ body {
   padding-left: 16px;
 }
 
-/* ===== Header Actions (右上角整組) ===== */
 .header-actions {
   display: flex;
   align-items: center;
 }
 
-/* 社群圖示 */
 .social-group {
   display: flex;
   gap: 8px;
@@ -136,7 +125,6 @@ body {
   height: 24px;
 }
 
-/* 分隔線 */
 .divider {
   width: 1px;
   height: 24px;
@@ -144,17 +132,15 @@ body {
   margin: 0 12px;
 }
 
-/* 按鈕群 */
 .btn-group .btn {
   margin-left: 10px;
   padding: 5px 10px;
   border: 1px solid var(--primary);
-  background-color: var(--content-bg);
+  background-color: transparent;
   color: var(--primary);
   cursor: pointer;
 }
 
-/* ===== Hero Image ===== */
 .hero {
   width: 1120px;
   height: 448px;
@@ -168,7 +154,6 @@ body {
   margin-top: 30px;
 }
 
-/* ===== Main Content ===== */
 .content {
   width: 1120px;
   height: 448px;
@@ -177,7 +162,6 @@ body {
   margin: 40px auto 20px auto;
 }
 
-/* 左右 box */
 .left, .right {
   width: 528px;
   height: auto;
@@ -209,7 +193,6 @@ body {
   margin: 0;
 }
 
-/* 圖片群組 */
 .left .gallery {
   display: flex;
   justify-content: space-between;
@@ -242,7 +225,6 @@ body {
 }
 
 
-/* Contact 區塊整體背景 */
 .contact-box {
   width: 500px;
   background-color: var(--content-bg);
@@ -251,14 +233,12 @@ body {
   margin-top: 16px;
 }
 
-/* 裡面文字 */
 .contact-box p {
   margin: 0 0 12px 0;
   line-height: 1.5;
   color: var(--content-text);
 }
 
-/* 分隔線 */
 .contact-divider {
   width: 100%;
   height: 1px;
@@ -267,9 +247,8 @@ body {
 }
 
 
-/* ===== Footer ===== */
 .footer {
-  width: 1440px;
+  width: 2000px;
   height: 60px;
   text-align: center;
   background-color: var(--primary);
